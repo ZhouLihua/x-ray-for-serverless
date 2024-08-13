@@ -1,0 +1,66 @@
+X-RAY performance
+
+no trace enabled
+
+Server Hostname:        xxxx.execute-api.ap-southeast-1.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+Server Temp Key:        ECDH X25519 253 bits
+TLS Server Name:        02drflrqfb.execute-api.ap-southeast-1.amazonaws.com
+
+Document Path:          /Prod/hello/
+Document Length:        58 bytes
+
+Concurrency Level:      1
+Time taken for tests:   5072.938 seconds
+Complete requests:      10000
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      198  265  42.1    260    1836
+Processing:   151  242 452.1    180   20943
+Waiting:      151  242 452.1    180   20943
+Total:        375  507 454.8    441   21211
+
+Percentage of the requests served within a certain time (ms)
+  50%    441
+  66%    456
+  75%    491
+  80%    521
+  90%    661
+  95%    681
+  98%    740
+  99%    935
+
+
+Enabled trace:
+
+Server Hostname:        xxxx.execute-api.ap-southeast-1.amazonaws.com
+Server Port:            443
+SSL/TLS Protocol:       TLSv1.2,ECDHE-RSA-AES128-GCM-SHA256,2048,128
+Server Temp Key:        ECDH X25519 253 bits
+TLS Server Name:        q2iro1fau0.execute-api.ap-southeast-1.amazonaws.com
+
+Document Path:          /Prod/hello/
+Document Length:        58 bytes
+
+Concurrency Level:      1
+Time taken for tests:   5332.179 seconds
+Complete requests:      10000
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      252  276 315.0    262   14514
+Processing:   117  257 522.3    193   21028
+Waiting:      117  256 522.3    193   21028
+Total:        376  533 612.4    458   21297
+
+Percentage of the requests served within a certain time (ms)
+  50%    458
+  66%    471
+  75%    500
+  80%    561
+  90%    677
+  95%    699
+  98%    769
+  99%    979
